@@ -1,0 +1,9 @@
+.loginBtn{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+}
+.logoutBtn{
+    background-color: rebeccapurple;
+    color: white;
+}
