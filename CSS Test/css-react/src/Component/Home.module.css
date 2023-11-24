@@ -1,8 +1,9 @@
 .homediv{
-    color: blue;
-    background-color: bisque;
+    color: rgb(255, 255, 255);
+    background-color: rgb(200, 199, 199);
     padding: 10px;
-    border: 1px solid;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 20px;
     margin: 20px;
 
