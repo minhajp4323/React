@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './useState.css'
 
 const StateTutorial = ()=>{
   const [counter, setCounter] = useState(2);
@@ -12,10 +13,12 @@ const StateTutorial = ()=>{
     setCounter(counter-1)
   }
   return(
-  <div className="main">{counter}<br></br>
-  <button onClick={increment}>Increment</button> <br>
+  <div className="main"><br></br>
+  <button className="btn1" onClick={increment}>Increment</button> <br>
 </br>
-  <button onClick={decrement}>decrement</button> </div>
+{counter}<br>
+</br>
+  <button className="btn2" onClick={decrement}>decrement</button> </div>
   )
 };
 

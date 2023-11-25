@@ -6,6 +6,7 @@ function Products({name, description, price}) {
     <div>
         <ItemDescription name ={name} description={description} />
         <h3>${price}</h3>
+        
     </div>
   )
 }
