@@ -1,11 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import StateTutorial from './components/useState';
+import { Tutorial } from './components/useState';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hooks</h1>
-    </div>
+    <>
+      <StateTutorial />
+      <br></br>
+      <Tutorial />
+
+    </>
   );
 }
 
