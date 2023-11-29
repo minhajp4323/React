@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
-  let number=1;
+  let isLoggedin= false;
   return (
     <div className="App">
-      {number>0?<h1>Positive</h1>:number<0? <h1>Negative</h1>:<h1>Zero</h1>  }
+      {isLoggedin ?<h1>Welcome to website</h1>:<h1>Please login</h1>  }
     </div>
   );
 }
