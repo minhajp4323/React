@@ -2,15 +2,23 @@ import React, {useState} from "react";
 import './useState.css'
 
 const StateTutorial = ()=>{
-  const [counter, setCounter] = useState(2);
+  const initial= 0;
+  const [counter, setCounter] = useState(initial);
+
 
   let increment=()=>{
     
     setCounter(counter+1)
+    
 
   }
   let decrement=()=>{
     setCounter(counter-1)
+  }
+  let addFive =()=>{
+    setCounter(prevCount=>prevCount+5)
+    setCounter(prevCount=>prevCount+5)
+    
   }
   return(
   <div className="main"><br></br>
@@ -18,7 +26,10 @@ const StateTutorial = ()=>{
 </br>
 {counter}<br>
 </br>
-  <button className="btn2" onClick={decrement}>decrement</button> </div>
+  <button className="btn2" onClick={decrement}>decrement</button>
+  <button className="btn2" onClick={()=>setCounter(initial)}>reset</button>
+  <button className="btn2" onClick={addFive}>add +5+5</button>
+   </div>
   )
 };
 
