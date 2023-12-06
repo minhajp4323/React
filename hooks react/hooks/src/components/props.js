@@ -1,12 +1,13 @@
-import React from 'react'
-import ItemDescription from './ItemDescription'
+import React from "react";
 
-function Products({name, description, price}) {
-  return (
+const Products=(props)=>{
+
+  return(
     <div>
-        <ItemDescription name ={name} description={description} />
-        <h3>${price}</h3>
-        
+      <h1>Products</h1>
+      <h2> {props.name} </h2>
+      <h2> {props.description} </h2>
+      <h2> ${props.price} </h2>
     </div>
   )
 }
