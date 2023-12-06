@@ -1,16 +1,21 @@
-import React, {useState} from "react";
+import React, {useState}  from "react";
+import { useEffect } from "react";
 import './useState.css'
+
 
 const StateTutorial = ()=>{
   const initial= 0;
   const [counter, setCounter] = useState(initial);
 
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then((data)=>data.json())
+    .then((result)=>console.log(result))
+  },[])
+
 
   let increment=()=>{
-    
     setCounter(counter+1)
-    
-
   }
   let decrement=()=>{
     setCounter(counter-1)
@@ -18,7 +23,6 @@ const StateTutorial = ()=>{
   let addFive =()=>{
     setCounter(prevCount=>prevCount+5)
     setCounter(prevCount=>prevCount+5)
-    
   }
   return(
   <div className="main"><br></br>
@@ -55,3 +59,4 @@ export const Tutorial =()=>{
     </div>
   )
 }
+console.log("minhaj");

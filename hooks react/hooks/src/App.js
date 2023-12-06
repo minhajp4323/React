@@ -8,6 +8,8 @@ import Handler from './components/stateTest';
 
 
 
+
+
 function App() {
   return (
     <>
@@ -15,7 +17,7 @@ function App() {
       <h2>UseStates</h2>
       <Handler />
 
-      {/* <StateTutorial /> */}
+      <StateTutorial />
   
       <br></br>
       {/* <Tutorial /> */}

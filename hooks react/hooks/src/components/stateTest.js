@@ -1,33 +1,29 @@
 import React, {useState} from "react";
 
-const Handler=()=>{
-    const initialCount=1
-    const [count, setCount]= useState(initialCount)
-
-    if(count==0){
-        alert("Reached minimum Count")
-    }
-
+const Handler=()=>{ 
+    const initialValue= 0
     
-    const Add=()=>{
+    const [count, setCount] = useState(initialValue)
+    const plus=()=>{
         setCount(count+1)
     }
-    const sub =()=>{
+    const sub=()=>{
         setCount(count-1)
     }
-    const reset= ()=>{
-        setCount(initialCount)
+    const reset=()=>{
+        setCount(initialValue)
     }
     return(
-        <>
-        
-        <button onClick={Add}>Increment</button>
-        <p>{count}</p>
-        <button onClick={sub}>Decrement</button>
-        <button onClick={reset}>Reset</button>
+        <div>
+         <h1>{count}</h1>
+          <button onClick={plus}>+</button>
+          <button onClick={sub}>-</button>
+          <button onClick={reset}>Reset</button>
+        </div>
+         
+     )
 
-        </>
-    )
 }
+
 
 export default Handler
