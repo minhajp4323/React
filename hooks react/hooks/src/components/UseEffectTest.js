@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function UseEffectTest() {
+  useEffect(()=>{
     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
     .then(data=>data.json())
-    .then(res=>console.log(res.title))
-  return (
-    <div>UseEffectTest</div>
-  )
+    .then(result=>console.log(result))
+  },[])
 }
-
 export default UseEffectTest

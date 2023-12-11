@@ -21,8 +21,9 @@ const StateTutorial = ()=>{
     setCounter(counter-1)
   }
   let addFive =()=>{
-    setCounter(prevCount=>prevCount+5)
-    setCounter(prevCount=>prevCount+5)
+    setCounter(prevCount=>prevCount-5)
+    setCounter(prevCount=>prevCount+
+      5)
   }
   return(
   <div className="main"><br></br>
