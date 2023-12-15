@@ -6,7 +6,9 @@ import "./App.css";
 // import CustomHooksTwo from "./Components/CustomHooksTwo";
 import ComponentA from "./Components/context api/ComponentA";
 import ParentOne from "./Components/memo/parentOne";
-
+import Counter from "./Components/useMemo/Counter";
+import ParentComponent from "./Components/UseCallback/ParentComponent";
+import Title from "./Components/UseCallback/Title";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -21,7 +23,9 @@ function App() {
 
       {/* <CustomHooks />
       <CustomHooksTwo /> */}
-      <ParentOne />
+      {/* <ParentOne />
+      <Counter /> */}
+      <ParentComponent />
     </div>
   );
 }
