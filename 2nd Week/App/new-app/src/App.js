@@ -9,6 +9,7 @@ import ParentOne from "./Components/memo/parentOne";
 import Counter from "./Components/useMemo/Counter";
 import ParentComponent from "./Components/UseCallback/ParentComponent";
 import Title from "./Components/UseCallback/Title";
+import LocalStorage from "./Components/Local storage/LocalStorage";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -25,7 +26,8 @@ function App() {
       <CustomHooksTwo /> */}
       {/* <ParentOne />
       <Counter /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <LocalStorage />
     </div>
   );
 }
