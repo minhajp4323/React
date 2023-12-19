@@ -16,9 +16,9 @@ function CreateBlog() {
       setBlog([
         ...blog,
         {
-          id: blog.lenght + 1,
-          blogname: nameref.current.value,
-          bloghead: blogref.current.value
+          id: blog.length + 1,
+          bloghead: nameref.current.value,
+          blogdata: blogref.current.value
         }
     ])
     nameref.current.value = "";
