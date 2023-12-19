@@ -18,7 +18,7 @@ function Counter() {
     while (i < 2000000000) i++;
     return counterOne % 2 == 0;
   }, [counterOne]);
-  //////////////////////
+  //////////////
   return (
     <div>
       <div>
@@ -34,3 +34,4 @@ function Counter() {
 }
 
 export default Counter;
+ 

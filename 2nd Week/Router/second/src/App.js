@@ -7,6 +7,7 @@ import Posted from "./Components/Posted";
 import Success from "./Components/Success";
 import { createContext, useState } from "react";
 import Display from "./Components/Display";
+import Newpage from "./Components/Newpage";
 
 export const myContext = createContext();
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="posted" element={<Posted />} />
           <Route path="succes" element={<Success />} />
           <Route path="display" element={<Display />} />
+          <Route path="minhaj" element={<Newpage />} />
         </Routes>
       </myContext.Provider>
     </div>
