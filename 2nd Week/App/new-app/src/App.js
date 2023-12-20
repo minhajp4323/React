@@ -19,24 +19,24 @@ export const ChannelContext = createContext();
 function App() {
   return (
     <div className="App">
-      {/* <UserContext.Provider value={"Minhaj"}>
+      <UserContext.Provider value={"Minhaj"}>
         <ChannelContext.Provider value={"bridgeoon"}>
           <ComponentA />
         </ChannelContext.Provider>
-      </UserContext.Provider> */}
+      </UserContext.Provider>
 
-      {/* <CustomHooks />
-      <CustomHooksTwo /> */}
-      {/* <ParentOne /> */}
-      {/* <Counter /> */}
-      {/* <ParentComponent /> */}
-      {/* <LocalStorage /> */}
-      {/* <Routes>
+      <CustomHooks />
+      <CustomHooksTwo />
+      <ParentOne />
+      <Counter />
+      <ParentComponent />
+      <LocalStorage />
+      <Routes>
         <Route path="/" element={<Counter /> }/>
         <Route path="/parent" element={<ParentOne /> } />
         <Route path="/parcomponent" element={<LocalStorage />} />
 
-      </Routes> */}
+      </Routes>
       <UseReducer />
       <FocusInput />
 

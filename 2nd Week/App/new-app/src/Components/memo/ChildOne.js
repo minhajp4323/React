@@ -6,7 +6,7 @@ export const ChildOne = () => {
   console.log("child rendered");
   return (
     <div>
-      Child Onejds
+      
       <button onClick={() => setCount((c) => c + 1)}>Count-{count} </button>
     </div>
   );
