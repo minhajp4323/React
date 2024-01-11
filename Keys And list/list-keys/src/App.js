@@ -7,6 +7,7 @@ import { createContext } from "react";
 import Main from "./components/keys/Main";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/keys/Home";
+import Login from "./CartComp/Login";
 
 export const UserContext = createContext();
 
@@ -16,13 +17,15 @@ function App() {
       {/* <Keys />
       <Header />
       <FetchEvent /> */}
-      <UserContext.Provider value={"Minhaj"}>
+      {/* <UserContext.Provider value={"Minhaj"}>
         <Context />
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* <Routes>
         <Route path="/" element={ <Main />} />
         <Route path="/home" element={< Home/> } />
       </Routes> */}
+
+      <Login />
     </div>
   );
 }
