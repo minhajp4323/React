@@ -59,8 +59,24 @@ section {
   object-fit: contain;
   transform: translateY(15px);
   transition: var(--transition);
+  border-radius: 20px;
 }
 .product-container.active img,
 .product-container.hover img {
   transform: translateY(-20px) scale(0.9);
+}
+.product-container h3{
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    position: relative;
+    transition: var(--transition);
+    top: 0;
+}
+.product-container.active h3,
+.product-container:hover h3{
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: 16px;
+    top: -25px;
 }

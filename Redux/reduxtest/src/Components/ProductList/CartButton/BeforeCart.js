@@ -1,10 +1,10 @@
 import React from "react";
-import "./CartButtons.css"
+import "./CartButtons.css";
 
-function BeforeCart() {
+function BeforeCart({ addToCart }) {
   return (
-    <div>
-        <button className="add-cart-button">Add to cart</button>
+    <div className="before-cart">
+      <button className="add-cart-button" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
