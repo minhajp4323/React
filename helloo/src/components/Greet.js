@@ -14,21 +14,18 @@ function Greet() {
     <div>
       <input type="text" onChange={inputHandle} />
       <table>
-        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        {profile.map((item)=>{
           <tr>
-            <th>Name</th>
-            <th>Age</th>
+            <td>{item.name}</td>
+            <td>{item.age}</td>
           </tr>
-        </thead>
-        <tbody>
-          {profile.map((item) => (
-            <tr>
-              <td>{item.name} </td>
-              <td>{item.age} </td>
-            </tr>
-          ))}
-        </tbody>
+        })}
       </table>
+      
     </div>
   );
 }
