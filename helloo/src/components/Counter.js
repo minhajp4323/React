@@ -1,16 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useReducer } from "react";
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const initialValue = 0;
+  const reducer = (state, action) => {
+    switch (action) {
+      case "increment":
+        return state + 1;
+      case "decrement":
+        return state - 1;
+      case "reset":
+        return initialValue;
+    }
+  };
 
-  useEffect(() => {
-    console.log("sideeefergdpfbk");
-  }, [count]);
-
+  const [count, dispatch] = useReducer( reducer,initialValue);
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <h1>Count:{count} </h1>
+      <button onClick={()=>dispatch("increment")}>Increment</button>
+      <button onClick={()=>dispatch("decrement")}>Decrement</button>
+      <button onClick={()=>dispatch("reset")}>Reset</button>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Hello, {  } from "./components/Hello";
 import { Component } from 'react';
+
+import Counter from './components/Counter';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
-import Counter from './components/Counter';
 
 
 class App extends Component{
@@ -12,9 +12,9 @@ class App extends Component{
     return (
       <div className='App'>
         {/* <Hello/> */}
-        <Greet />
-        <Welcome />
-        <Counter />
+        {/* <Greet/> */}
+        <Welcome/>
+        {/* <Counter /> */}
       </div>
     )
   }
