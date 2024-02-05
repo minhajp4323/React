@@ -7,20 +7,29 @@ function Greet() {
     { name: "Jishmal", age: 24 },
     { name: "Shibil", age: 22 },
   ];
+
   return (
     <div>
-      <table>
+      <thead>
         <tr>
           <th>Name</th>
           <th>Age</th>
         </tr>
-        {profile.map((item)=>(
+      </thead>
+      <tbody>
+        {profile.map((item) => (
           <tr>
             <td>{item.name} </td>
             <td>{item.age} </td>
           </tr>
         ))}
-      </table>
+      </tbody>
+      {profile.map((x)=>(
+
+        <ul>
+          <li>{x.name}  {x.age} </li>
+        </ul>
+      ))}
     </div>
   );
 }
