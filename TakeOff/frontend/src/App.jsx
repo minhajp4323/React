@@ -1,15 +1,19 @@
-import "./App.css";
-import TextField from "@mui/material/TextField";
+import { Route, Routes } from "react-router-dom";
+import FirstPage from "./Components/FirstPage";
+import List from "./Components/List";
+
 
 function App() {
   return (
     <>
-      <div>Minhajdg</div>
-      <div color="white">
-        <TextField id="filled-basic" label="Filled" variant="filled" />
+      <div>
+        <Routes>
+          <Route path="/" element={<FirstPage />}/>
+          <Route path="/List" element={<List />}/>
+        </Routes>
       </div>
     </>
   );
 }
-  
+
 export default App;

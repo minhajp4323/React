@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import User from "./Schema.js";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 const mongo =
   "mongodb+srv://minhajsam1233:mentorpass@mentor.r7t4xhq.mongodb.net/TakeOffTest";
 
