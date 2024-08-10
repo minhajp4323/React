@@ -1,11 +1,10 @@
 import "./App.css";
-import Todo from "./Todo/Todo";
+import ColorChanger from "./ColorChanger/ColorChanger";
 
 function App() {
   return (
     <div className="App">
-      <h1>Todo</h1>
-      <Todo />
+      <ColorChanger />
     </div>
   );
 }
